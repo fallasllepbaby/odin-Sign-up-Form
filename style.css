@@ -48,8 +48,13 @@ table {
 }
 
 
+:root {
+	--purple-color : #411551;
+	--light-purple-color : rgb(25%, 8%, 32%, 0.7);
+}
+
 body {
-	background-color: #411551;
+	background-color: var(--purple-color);
 	min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -59,7 +64,7 @@ body {
 .main-container {
     display: flex;
     border-radius: 150px;
-	width: 80vw;
+	width: 60vw;
 	height: 80vh;
 	border: 1px solid black;
 }
@@ -69,17 +74,43 @@ body {
 	background-size: contain;
     width: 40%;
 	border-radius: 150px 0 0 150px;
+	position:relative;
+
+	
+	
 }
 
+.logo {
+	background-color: var(--light-purple-color);
+
+	/* Aling logo-text and logo-image */
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+
+	/* Align logo on centre and 180px down */
+	position:absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 180px;
+}
+
+.logo-text {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+
 .right-side {
+	border-radius: 0 150px 150px 0;
+	background-color: black;
 	width: 60%;
 }
 
-.material-symbols-outlined {
-	font-size: 4rem;
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 700,
-    'GRAD' 0,
-    'opsz' 48
+.car {
+	width: 40px;
 }
