@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,6 +50,7 @@ table {
 
 
 :root {
+	font-family: 'Sedgwick Ave Display', cursive;
 	--purple-color : #411551;
 	--light-purple-color : rgb(25%, 8%, 32%, 0.7);
 }
@@ -81,6 +83,7 @@ body {
 }
 
 .logo {
+	height: 80px;
 	background-color: var(--light-purple-color);
 
 	/* Aling logo-text and logo-image */
@@ -99,8 +102,8 @@ body {
 }
 
 .logo-text {
-	font-size: 2rem;
-	font-weight: bold;
+	font-size: 3rem;
+	/* font-weight: bold; */
 }
 
 
@@ -112,5 +115,51 @@ body {
 }
 
 .car {
-	width: 40px;
+	width: 60px;
+
+}
+
+.right-side {
+	color: var(--purple-color);
+}
+
+form {
+	margin: 60px;
+}
+
+.form-container {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 80px;
+	margin: 60px 0;
+	font-size: 1.3rem;
+}
+
+input , label {
+	display: block;
+}
+
+.right-side_header {
+	margin: 60px;
+	font-size: 2rem;
+}
+
+legend {
+	font-size: 2rem;
+}
+
+.first_column > div, .second_column > div {
+	margin-bottom: 40px;
+}
+
+.form-container input {
+	color: white;
+	background-color: var(--light-purple-color);
+	border: 3px solid var(--purple-color);
+	border-radius: 15px;
+	width: 100%;
+  	padding: 0.5rem;
+  	font-size: 1.2rem;
+	/* box-shadow: 120px 80px 40px 20px #0ff; */
 }
