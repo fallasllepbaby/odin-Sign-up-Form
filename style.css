@@ -192,3 +192,7 @@ form button {
 form button:hover {
 	border: 5px solid black;
 }
+
+::placeholder {
+	color:var(--light-purple-color);
+}
